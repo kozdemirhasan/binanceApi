@@ -15,18 +15,14 @@ import java.io.IOException;
 @Component
 public class RestTemplateResponseErrorHandler implements ResponseErrorHandler {
 
+
     @Override
     public boolean hasError(ClientHttpResponse response) throws IOException {
-        return false;
         return false;
     }
 
     @Override
     public void handleError(ClientHttpResponse response) throws IOException {
-        if(response.getStatusCode().i == HttpStatus.Series.SERVER_ERROR){
-
-        }
-
 
     }
 }
